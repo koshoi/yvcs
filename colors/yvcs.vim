@@ -23,7 +23,7 @@ let s:pink     = 201
 let s:violet   = 129
 let s:brown    = 130
 
-let s:l_green  = 82
+let s:l_green  = 41
 let s:l_red    = 197
 let s:l_blue   = 39
 let s:l_gray   = 241
@@ -92,14 +92,14 @@ call Use_color('TabLine',         s:color9,    s:color_bg2)
 call Use_color('TabLineFill',     s:color3,    s:color_bg2)
 call Use_color('TabLineSel',      s:color6,    s:color_bg)
 
-call Use_effect('TabLine',        'bold')
+call Use_effect('TabLineSel',     'bold')
 
 " -------------------------------
 " - File Navigation / Searching -
 " -------------------------------
 call Use_color('Directory',       s:color4,    s:color_bg)
-call Use_color('Search',          s:color1,    s:color3)
-call Use_color('IncSearch',       s:color3,    s:color1)
+call Use_color('Search',          s:color_bg,  s:color1)
+call Use_color('IncSearch',       s:color_bg,  s:color3)
 
 " -----------------
 " - Prompt/Status -
