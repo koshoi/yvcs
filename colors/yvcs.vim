@@ -71,6 +71,10 @@ function! Use_color(hiGroup, color_fg, color_bg)
 	exec "hi " a:hiGroup "ctermfg=" a:color_fg " ctermbg=" a:color_bg " cterm=none"
 endfunction
 
+function! Use_effect(hiGroup, effect)
+	exec "hi " a:hiGroup " cterm=" a:effect
+endfunction
+
 " --------------------------
 " - Normal text and basics -
 " --------------------------
@@ -84,9 +88,11 @@ call Use_color('Folded',          s:color2,   s:color_bg)
 " - Window/Tab delimiters -
 " -------------------------
 call Use_color('VertSplit',       s:color4,    s:color_bg)
-call Use_color('TabLine',         s:color9,    s:color_bg)
-call Use_color('TabLineFill',     s:color3,    s:color_bg)
-call Use_color('TabLineSel',      s:color4,    s:color_bg)
+call Use_color('TabLine',         s:color9,    s:color_bg2)
+call Use_color('TabLineFill',     s:color3,    s:color_bg2)
+call Use_color('TabLineSel',      s:color6,    s:color_bg)
+
+call Use_effect('TabLine',        'bold')
 
 " -------------------------------
 " - File Navigation / Searching -
@@ -98,8 +104,10 @@ call Use_color('IncSearch',       s:color3,    s:color1)
 " -----------------
 " - Prompt/Status -
 " -----------------
-call Use_color('StatusLine',      s:color6,    s:color_bg)
-call Use_color('WildMenu',        s:color7,    s:color_bg)
+call Use_color('StatusLine',      s:color6,    s:color_bg2)
+call Use_color('WildMenu',        s:color_bg,  s:color4)
+
+call Use_effect('WildMenu',       'bold')
 " --------------
 " - Visual aid -
 " --------------
@@ -108,6 +116,8 @@ call Use_color('Visual',          s:color3,    s:color_bg2)
 call Use_color('NonText',         s:color9,    s:color_bg)
 call Use_color('Error',           s:color_fg,  s:color3)
 call Use_color('SpecialKey',      s:color_fg2, s:color_bg)
+
+call Use_effect('MatchParen',     'bold')
 
 " --------------------------------
 " Variable types
@@ -164,6 +174,8 @@ call Use_color('DiffText',        s:color_fg2, s:color_bg)
 " --------------------------------
 call Use_color('Pmenu',           s:color_fg2, s:color_bg2)
 call Use_color('PmenuSel',        s:color3,    s:color_bg+1)
+
+call Use_effect('PmenuSel', 'bold')
 
 "--------------------------------------------------------------------
 " Specific settings or unknown settings                             |
