@@ -168,6 +168,8 @@ call Use_color('DiffAdd',         s:color2,    s:color_bg)
 call Use_color('DiffChange',      s:color4,    s:color_bg)
 call Use_color('DiffDelete',      s:color3,    s:color_bg)
 call Use_color('DiffText',        s:color_fg2, s:color_bg)
+call Use_color('diffRemoved',     s:color3,    s:color_bg)
+call Use_color('diffAdded',       s:color2,    s:color_bg)
 
 " --------------------------------
 " Completion menu
