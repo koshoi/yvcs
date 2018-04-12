@@ -81,8 +81,8 @@ endfunction
 call Use_color('Normal',          s:color_fg, s:color_bg)
 call Use_color('CursorLineNR',    s:color3,   s:color_bg)
 call Use_color('LineNr',          s:color2,   s:color_bg)
-call Use_color('CursorLine',      'none',     s:color_bg)
-call Use_color('Folded',          s:color4,  s:color_bg)
+call Use_color('CursorLine',      'none',     s:color_bg2)
+call Use_color('Folded',          s:color4,   s:color_bg)
 
 " -------------------------
 " - Window/Tab delimiters -
