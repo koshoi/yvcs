@@ -22,18 +22,18 @@ let g:colors_name="yvpale"
 
 let s:color_fg  = 248
 let s:color_fg2 = 243
-let s:color_bg  = 235
+let s:color_bg  = 234
 let s:color_bg2 = 237
 
-let s:color1    = 49
-let s:color2    = 37
-let s:color3    = 133
-let s:color4    = 39
-let s:color5    = 83
-let s:color6    = 48
-let s:color7    = 123
+let s:color1    = 41
+let s:color2    = 43
+let s:color3    = 203
+let s:color4    = 75
+let s:color5    = 155
+let s:color6    = 84
+let s:color7    = 75
 let s:color8    = 35
-let s:color9    = 77
+let s:color9    = 43
 
 " vim does not support usage of variables in simple commands
 " that is why I am using function for taht
